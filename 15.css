@@ -21,7 +21,7 @@ h1{
     position: relative;
 }
 h1::after{
-    content: "胡宇冯梅雪";
+    content: "阳光信仰";
     /* 颜色为透明 */
     color: transparent;
     position: absolute;
