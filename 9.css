@@ -5,6 +5,11 @@
     /* 这个是告诉浏览器：你想要设置的边框和内边距的值是包含在总宽高内的 */
     box-sizing: border-box;
 }
+html{
+
+    font-size: 16px;
+
+   }
 .con{
     /* 弹性布局 水平、垂直居中 */
     display: flex;
@@ -13,16 +18,16 @@
     align-items: center;
 	background: linear-gradient(200deg,#55ff7f,#ffaa00);
     /* 100%的窗口高度 */
-    height: 100vh;
+    height: 60rem;
     /* 行高 */
-    line-height: 80px;
+    line-height: 13.125rem;
    
     /* 字间距 */
-    letter-spacing: 15px;
+    letter-spacing: .9375rem;
 	
 }
 h1{
-   font-size: 30px;
+   font-size: 6.25rem;
    color:#fff;
 
 }
@@ -31,29 +36,29 @@ h1{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 150rem;
+    height: 60rem;
     /* 渐变背景 */
     background: linear-gradient(200deg,#ec77ab,#7873f5);
-    /* 将元素剪切为一个圆形【25px表示圆的直径】【calc(100% - 45px) 45px表示圆心】 */
-    clip-path: circle(25px at calc(100% - 45px) 45px);
+    /* 将元素剪切为一个圆形【1.5625rem表示圆的直径】【calc(100% - 2.8125rem) 2.8125rem表示圆心】 */
+    clip-path: circle(1.5625rem at calc(100% - 2.8125rem) 2.8125rem);
     /* 过渡动画 */
     transition: all 0.3s ease-in-out;
 }
 .menu-btn{
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 1.25rem;
+    top: 1.25rem;
     z-index: 2;
     /* 渐变背景 */
     background: linear-gradient(200deg,#ec77ab,#7873f5);
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
     text-align: center;
-    line-height: 50px;
+    line-height: 3.125rem;
     border-radius: 50%;
     color: #fff;
-    font-size: 20px;
+    font-size: 1rem;
     cursor: pointer;
     /* 这里也加个过渡动画 */
     transition: all 0.3s ease;
@@ -83,26 +88,26 @@ h1{
     text-align: center;
 }
 .wrapper ul li{
-    margin: 30px 0px;
+    margin: 1.875rem 0rem;
 }
 .wrapper ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 500;
-    padding: 5px 50px;
+    padding: .3125rem 3.125rem;
     position: relative;
-    line-height: 50px;
+    line-height: 3.125rem;
 }
 .wrapper ul li a::after{
     content: "";
     position: absolute;
     width: 100%;
-    height: 50px;
+    height: 3.125rem;
     background: #fff;
     z-index: -1;
-    border-radius: 50px;
-    left: 0px;
+    border-radius: 3.125rem;
+    left: 0rem;
     transform: scaleY(0);
     /* 加个动画过渡 */
     transition: transform 0.3s ease;
@@ -121,16 +126,16 @@ h1{
 .sign{
     /* 设置宽度为60%窗口宽度 */
 	position: absolute;
-	left:50vw;
-	top:5vh;
+	left:50%;
+	top:6.5rem;
 	transform: translateX(-50%);
-    width: 60vw;
-    height: 60px;
-    line-height: 60px;
+    width: 100%;
+    height: auto;
+    line-height: 4.75rem;
     /* background-color: linear-gradient(200deg,#ff55ff,#00ffff); */
     /* 盒子阴影 */
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
-    border-radius: 50px;
+    box-shadow: 0rem .3125rem .9375rem rgba(0,0,0,0.25);
+    border-radius: 3.125rem;
 }
 .sign nav{
     display: flex;
@@ -147,13 +152,13 @@ h1{
     position: relative;
     z-index: -1;
     color: #333;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     text-decoration: none;
 }
 .sign nav label a i{
-    font-size: 25px;
-    margin: 0px 7px;
+    font-size: 1.5625rem;
+    margin: 0rem .4375rem;
 }
 .sign nav input{
     display: none;
@@ -162,11 +167,11 @@ h1{
     position: absolute;
     height: 100%;
     width: 20%;
-    left: 0px;
-    bottom: 0px;
+    left: 0rem;
+    bottom: 0rem;
     /* 渐变背景 自左向右 */
     background: linear-gradient(to right, #f09819, #ff5858);
-    border-radius: 50px;
+    border-radius: 3.125rem;
     /* 添加动画过渡 贝塞尔曲线 */
     transition: 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
 }
